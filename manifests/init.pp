@@ -478,6 +478,7 @@ class monit (
     source  => $monit::manage_file_source,
     content => $monit::manage_file_content,
     replace => $monit::manage_file_replace,
+    audit   => $monit::manage_audit,
   }
 
   file { 'monit.init':
